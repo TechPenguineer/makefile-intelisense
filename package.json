@@ -1,0 +1,25 @@
+{
+    "name": "makefile-intelisense",
+    "displayName": "makefile-intelisense",
+    "description": "An extention that gives intelisense for makefiles",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.59.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "makefile",
+            "aliases": ["makefile", "makefile"],
+            "extensions": ["makefile"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "makefile",
+            "scopeName": "makefile",
+            "path": "./syntaxes/makefile.tmLanguage.json"
+        }]
+    }
+}
